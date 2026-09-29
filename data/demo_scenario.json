@@ -1,0 +1,493 @@
+{
+  "name": "Recovery Lab \u00b7 24-hour synthetic replay",
+  "mode": "synthetic",
+  "start": "2026-09-29T00:00:00Z",
+  "end": "2026-09-30T00:00:00Z",
+  "decision_time": "2026-09-29T08:00:00Z",
+  "slot_seconds": 30,
+  "booking_lead_s": 900,
+  "stations": [
+    {
+      "id": "GS-A",
+      "name": "North Hub \u00b7 Simulated",
+      "latitude": 28.6,
+      "longitude": 77.2,
+      "acquisition_s": 30,
+      "turnaround_s": 30,
+      "minimum_elevation_deg": 10
+    },
+    {
+      "id": "GS-B",
+      "name": "West Hub \u00b7 Simulated",
+      "latitude": 23.0,
+      "longitude": 72.6,
+      "acquisition_s": 30,
+      "turnaround_s": 30,
+      "minimum_elevation_deg": 10
+    },
+    {
+      "id": "GS-C",
+      "name": "South Hub \u00b7 Simulated",
+      "latitude": 13.0,
+      "longitude": 77.6,
+      "acquisition_s": 30,
+      "turnaround_s": 30,
+      "minimum_elevation_deg": 10
+    }
+  ],
+  "satellites": [
+    {
+      "id": "SAT-01",
+      "name": "DemoSat 01",
+      "allowed_station_ids": [
+        "GS-A",
+        "GS-B",
+        "GS-C"
+      ]
+    },
+    {
+      "id": "SAT-02",
+      "name": "DemoSat 02",
+      "allowed_station_ids": [
+        "GS-A",
+        "GS-B",
+        "GS-C"
+      ]
+    },
+    {
+      "id": "SAT-03",
+      "name": "DemoSat 03",
+      "allowed_station_ids": [
+        "GS-A",
+        "GS-B",
+        "GS-C"
+      ]
+    },
+    {
+      "id": "SAT-04",
+      "name": "DemoSat 04",
+      "allowed_station_ids": [
+        "GS-A",
+        "GS-B",
+        "GS-C"
+      ]
+    },
+    {
+      "id": "SAT-05",
+      "name": "DemoSat 05",
+      "allowed_station_ids": [
+        "GS-A",
+        "GS-B",
+        "GS-C"
+      ]
+    },
+    {
+      "id": "SAT-06",
+      "name": "DemoSat 06",
+      "allowed_station_ids": [
+        "GS-A",
+        "GS-B",
+        "GS-C"
+      ]
+    },
+    {
+      "id": "SAT-07",
+      "name": "DemoSat 07",
+      "allowed_station_ids": [
+        "GS-A",
+        "GS-B",
+        "GS-C"
+      ]
+    },
+    {
+      "id": "SAT-08",
+      "name": "DemoSat 08",
+      "allowed_station_ids": []
+    }
+  ],
+  "windows": [
+    {
+      "id": "W-001",
+      "satellite_id": "SAT-01",
+      "station_id": "GS-A",
+      "start": "2026-09-29T09:00:00Z",
+      "end": "2026-09-29T09:08:00Z"
+    },
+    {
+      "id": "W-002",
+      "satellite_id": "SAT-01",
+      "station_id": "GS-B",
+      "start": "2026-09-29T09:03:00Z",
+      "end": "2026-09-29T09:11:00Z"
+    },
+    {
+      "id": "W-003",
+      "satellite_id": "SAT-02",
+      "station_id": "GS-B",
+      "start": "2026-09-29T09:03:00Z",
+      "end": "2026-09-29T09:11:00Z"
+    },
+    {
+      "id": "W-004",
+      "satellite_id": "SAT-02",
+      "station_id": "GS-B",
+      "start": "2026-09-29T10:00:00Z",
+      "end": "2026-09-29T10:08:00Z"
+    },
+    {
+      "id": "W-005",
+      "satellite_id": "SAT-03",
+      "station_id": "GS-C",
+      "start": "2026-09-29T09:01:00Z",
+      "end": "2026-09-29T09:09:00Z"
+    },
+    {
+      "id": "W-006",
+      "satellite_id": "SAT-04",
+      "station_id": "GS-A",
+      "start": "2026-09-29T09:12:00Z",
+      "end": "2026-09-29T09:20:00Z"
+    },
+    {
+      "id": "W-007",
+      "satellite_id": "SAT-04",
+      "station_id": "GS-C",
+      "start": "2026-09-29T09:13:00Z",
+      "end": "2026-09-29T09:22:00Z"
+    },
+    {
+      "id": "W-008",
+      "satellite_id": "SAT-05",
+      "station_id": "GS-C",
+      "start": "2026-09-29T09:13:00Z",
+      "end": "2026-09-29T09:22:00Z"
+    },
+    {
+      "id": "W-009",
+      "satellite_id": "SAT-05",
+      "station_id": "GS-C",
+      "start": "2026-09-29T10:15:00Z",
+      "end": "2026-09-29T10:24:00Z"
+    },
+    {
+      "id": "W-010",
+      "satellite_id": "SAT-06",
+      "station_id": "GS-A",
+      "start": "2026-09-29T09:30:00Z",
+      "end": "2026-09-29T09:40:00Z"
+    },
+    {
+      "id": "W-011",
+      "satellite_id": "SAT-07",
+      "station_id": "GS-B",
+      "start": "2026-09-29T11:00:00Z",
+      "end": "2026-09-29T11:09:00Z"
+    },
+    {
+      "id": "W-012",
+      "satellite_id": "SAT-08",
+      "station_id": "GS-C",
+      "start": "2026-09-29T12:00:00Z",
+      "end": "2026-09-29T12:12:00Z"
+    },
+    {
+      "id": "W-013",
+      "satellite_id": "SAT-01",
+      "station_id": "GS-A",
+      "start": "2026-09-29T13:05:00Z",
+      "end": "2026-09-29T13:14:00Z"
+    },
+    {
+      "id": "W-014",
+      "satellite_id": "SAT-02",
+      "station_id": "GS-B",
+      "start": "2026-09-29T13:30:00Z",
+      "end": "2026-09-29T13:39:00Z"
+    },
+    {
+      "id": "W-015",
+      "satellite_id": "SAT-03",
+      "station_id": "GS-C",
+      "start": "2026-09-29T14:05:00Z",
+      "end": "2026-09-29T14:14:00Z"
+    },
+    {
+      "id": "W-016",
+      "satellite_id": "SAT-04",
+      "station_id": "GS-A",
+      "start": "2026-09-29T14:30:00Z",
+      "end": "2026-09-29T14:39:00Z"
+    },
+    {
+      "id": "W-017",
+      "satellite_id": "SAT-05",
+      "station_id": "GS-B",
+      "start": "2026-09-29T15:05:00Z",
+      "end": "2026-09-29T15:14:00Z"
+    },
+    {
+      "id": "W-018",
+      "satellite_id": "SAT-06",
+      "station_id": "GS-C",
+      "start": "2026-09-29T15:30:00Z",
+      "end": "2026-09-29T15:39:00Z"
+    },
+    {
+      "id": "W-019",
+      "satellite_id": "SAT-07",
+      "station_id": "GS-A",
+      "start": "2026-09-29T16:05:00Z",
+      "end": "2026-09-29T16:14:00Z"
+    },
+    {
+      "id": "W-020",
+      "satellite_id": "SAT-01",
+      "station_id": "GS-B",
+      "start": "2026-09-29T16:30:00Z",
+      "end": "2026-09-29T16:39:00Z"
+    },
+    {
+      "id": "W-021",
+      "satellite_id": "SAT-02",
+      "station_id": "GS-C",
+      "start": "2026-09-29T17:05:00Z",
+      "end": "2026-09-29T17:14:00Z"
+    },
+    {
+      "id": "W-022",
+      "satellite_id": "SAT-03",
+      "station_id": "GS-A",
+      "start": "2026-09-29T17:30:00Z",
+      "end": "2026-09-29T17:39:00Z"
+    },
+    {
+      "id": "W-023",
+      "satellite_id": "SAT-04",
+      "station_id": "GS-B",
+      "start": "2026-09-29T18:05:00Z",
+      "end": "2026-09-29T18:14:00Z"
+    }
+  ],
+  "requests": [
+    {
+      "id": "R-01",
+      "satellite_id": "SAT-01",
+      "label": "Priority image downlink",
+      "earliest": "2026-09-29T09:00:00Z",
+      "deadline": "2026-09-29T09:10:00Z",
+      "duration_s": 240,
+      "priority": "critical",
+      "locked": false
+    },
+    {
+      "id": "R-02",
+      "satellite_id": "SAT-02",
+      "label": "Routine science batch",
+      "earliest": "2026-09-29T09:00:00Z",
+      "deadline": "2026-09-29T10:10:00Z",
+      "duration_s": 240,
+      "priority": "routine",
+      "locked": false
+    },
+    {
+      "id": "R-03",
+      "satellite_id": "SAT-03",
+      "label": "Protected health report",
+      "earliest": "2026-09-29T09:00:00Z",
+      "deadline": "2026-09-29T09:10:00Z",
+      "duration_s": 240,
+      "priority": "high",
+      "locked": true
+    },
+    {
+      "id": "R-04",
+      "satellite_id": "SAT-04",
+      "label": "Time-sensitive image batch",
+      "earliest": "2026-09-29T09:10:00Z",
+      "deadline": "2026-09-29T09:22:00Z",
+      "duration_s": 240,
+      "priority": "critical",
+      "locked": false
+    },
+    {
+      "id": "R-05",
+      "satellite_id": "SAT-05",
+      "label": "Routine housekeeping",
+      "earliest": "2026-09-29T09:10:00Z",
+      "deadline": "2026-09-29T10:30:00Z",
+      "duration_s": 300,
+      "priority": "routine",
+      "locked": false
+    },
+    {
+      "id": "R-06",
+      "satellite_id": "SAT-06",
+      "label": "Critical single-station batch",
+      "earliest": "2026-09-29T09:28:00Z",
+      "deadline": "2026-09-29T09:40:00Z",
+      "duration_s": 240,
+      "priority": "critical",
+      "locked": false
+    },
+    {
+      "id": "R-07",
+      "satellite_id": "SAT-07",
+      "label": "High-priority science set",
+      "earliest": "2026-09-29T10:58:00Z",
+      "deadline": "2026-09-29T11:10:00Z",
+      "duration_s": 300,
+      "priority": "high",
+      "locked": false
+    },
+    {
+      "id": "R-08",
+      "satellite_id": "SAT-07",
+      "label": "Competing routine set",
+      "earliest": "2026-09-29T10:58:00Z",
+      "deadline": "2026-09-29T11:10:00Z",
+      "duration_s": 300,
+      "priority": "routine",
+      "locked": false
+    },
+    {
+      "id": "R-09",
+      "satellite_id": "SAT-08",
+      "label": "Unauthorised link request",
+      "earliest": "2026-09-29T12:00:00Z",
+      "deadline": "2026-09-29T12:15:00Z",
+      "duration_s": 240,
+      "priority": "routine",
+      "locked": false
+    },
+    {
+      "id": "R-10",
+      "satellite_id": "SAT-01",
+      "label": "Science batch 01",
+      "earliest": "2026-09-29T13:05:00Z",
+      "deadline": "2026-09-29T13:17:00Z",
+      "duration_s": 180,
+      "priority": "routine",
+      "locked": false
+    },
+    {
+      "id": "R-11",
+      "satellite_id": "SAT-02",
+      "label": "Science batch 02",
+      "earliest": "2026-09-29T13:30:00Z",
+      "deadline": "2026-09-29T13:42:00Z",
+      "duration_s": 180,
+      "priority": "routine",
+      "locked": false
+    },
+    {
+      "id": "R-12",
+      "satellite_id": "SAT-03",
+      "label": "Science batch 03",
+      "earliest": "2026-09-29T14:05:00Z",
+      "deadline": "2026-09-29T14:17:00Z",
+      "duration_s": 180,
+      "priority": "high",
+      "locked": false
+    },
+    {
+      "id": "R-13",
+      "satellite_id": "SAT-04",
+      "label": "Science batch 04",
+      "earliest": "2026-09-29T14:30:00Z",
+      "deadline": "2026-09-29T14:42:00Z",
+      "duration_s": 180,
+      "priority": "routine",
+      "locked": false
+    },
+    {
+      "id": "R-14",
+      "satellite_id": "SAT-05",
+      "label": "Science batch 05",
+      "earliest": "2026-09-29T15:05:00Z",
+      "deadline": "2026-09-29T15:17:00Z",
+      "duration_s": 180,
+      "priority": "routine",
+      "locked": false
+    },
+    {
+      "id": "R-15",
+      "satellite_id": "SAT-06",
+      "label": "Science batch 06",
+      "earliest": "2026-09-29T15:30:00Z",
+      "deadline": "2026-09-29T15:42:00Z",
+      "duration_s": 180,
+      "priority": "routine",
+      "locked": false
+    },
+    {
+      "id": "R-16",
+      "satellite_id": "SAT-07",
+      "label": "Science batch 07",
+      "earliest": "2026-09-29T16:05:00Z",
+      "deadline": "2026-09-29T16:17:00Z",
+      "duration_s": 180,
+      "priority": "high",
+      "locked": false
+    },
+    {
+      "id": "R-17",
+      "satellite_id": "SAT-01",
+      "label": "Science batch 08",
+      "earliest": "2026-09-29T16:30:00Z",
+      "deadline": "2026-09-29T16:42:00Z",
+      "duration_s": 180,
+      "priority": "routine",
+      "locked": false
+    },
+    {
+      "id": "R-18",
+      "satellite_id": "SAT-02",
+      "label": "Science batch 09",
+      "earliest": "2026-09-29T17:05:00Z",
+      "deadline": "2026-09-29T17:17:00Z",
+      "duration_s": 180,
+      "priority": "routine",
+      "locked": false
+    },
+    {
+      "id": "R-19",
+      "satellite_id": "SAT-03",
+      "label": "Science batch 10",
+      "earliest": "2026-09-29T17:30:00Z",
+      "deadline": "2026-09-29T17:42:00Z",
+      "duration_s": 180,
+      "priority": "routine",
+      "locked": false
+    },
+    {
+      "id": "R-20",
+      "satellite_id": "SAT-04",
+      "label": "Science batch 11",
+      "earliest": "2026-09-29T18:05:00Z",
+      "deadline": "2026-09-29T18:17:00Z",
+      "duration_s": 180,
+      "priority": "high",
+      "locked": false
+    }
+  ],
+  "outages": [],
+  "metadata": {
+    "provenance": "Hand-authored test windows, fictional satellites and mission requests. NOT propagated or live.",
+    "replay_date": "2026-09-29",
+    "station_status": "All stations are simulated; coordinates confer no access.",
+    "recommended_outage": {
+      "station_id": "GS-A",
+      "start": "2026-09-29T09:00:00Z",
+      "end": "2026-09-29T09:45:00Z",
+      "reason": "Demo antenna maintenance"
+    },
+    "expected_demo": "An A outage requires reassignment and leaves the single-station critical request unserved.",
+    "assumptions": [
+      "One antenna per station; one link per satellite.",
+      "Whole request fits one contact; no split transfers.",
+      "Both fixed preparation buffers fit inside the declared visibility window.",
+      "No link budget, adaptive data rate, cloud attenuation, steering or power model.",
+      "Only future contacts are replanned; no current spacecraft control."
+    ]
+  }
+}

@@ -1,0 +1,3 @@
+-r requirements.txt
+# Optional adapter: not required for the offline scheduling demonstration.
+skyfield>=1.49,<2

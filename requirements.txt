@@ -1,0 +1,6 @@
+# Tested versions for the local scheduling core. Python 3.12 or 3.13 recommended.
+fastapi==0.128.2
+uvicorn==0.48.0
+pydantic==2.13.4
+numpy==2.3.5
+scipy==1.17.0
