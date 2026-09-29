@@ -6,7 +6,6 @@ from pathlib import Path
 from threading import Lock
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import FileResponse, JSONResponse
-from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.trustedhost import TrustedHostMiddleware
 from . import __version__
 from .models import Scenario, PlanInput, OrbitImport
@@ -16,7 +15,14 @@ from .orbits import build_orbit_scenario
 ROOT=Path(__file__).resolve().parents[1]
 app=FastAPI(title='PassRescue API',version=__version__,description='Local decision-support prototype. No live spacecraft or station control.')
 app.add_middleware(TrustedHostMiddleware,allowed_hosts=['localhost','127.0.0.1','[::1]','testserver'])
-app.mount('/static',StaticFiles(directory=ROOT/'static'),name='static')
+STATIC_DIR = ROOT / "static"
+
+if STATIC_DIR.exists():
+    app.mount(
+        "/static",
+        StaticFiles(directory=STATIC_DIR),
+        name="static"
+    )
 solve_lock=Lock()
 
 @app.middleware('http')
@@ -32,10 +38,12 @@ async def headers(request: Request,call_next):
         response.headers['Content-Security-Policy']="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; frame-ancestors 'none'"
     return response
 
-@app.get('/',include_in_schema=False)
+@app.get("/", include_in_schema=False)
 def index():
-    return FileResponse(ROOT/'static'/'index.html')
-
+    return {
+        "status": "online",
+        "service": "PassRescue Backend"
+    }
 @app.get('/api/health')
 def health():
     return {'status':'ok','version':__version__,'solver':'SciPy / HiGHS MILP',
