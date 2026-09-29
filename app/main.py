@@ -14,7 +14,10 @@ from .orbits import build_orbit_scenario
 
 ROOT=Path(__file__).resolve().parents[1]
 app=FastAPI(title='PassRescue API',version=__version__,description='Local decision-support prototype. No live spacecraft or station control.')
-app.add_middleware(TrustedHostMiddleware,allowed_hosts=['localhost','127.0.0.1','[::1]','testserver'])
+app.add_middleware(
+    TrustedHostMiddleware,
+    allowed_hosts=["*"]
+)
 STATIC_DIR = ROOT / "static"
 
 if STATIC_DIR.exists():
